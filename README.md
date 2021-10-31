@@ -26,9 +26,9 @@ This project built using **laravel 8.0**, so your php version must be >= **8.0**
    - second user credentials is [`email` => `admin@user.com` , `password` => `admin`] and his role is admin  
 
 8. Some useful commands needed to Run:  
-        `php artisan key:generate`
-	`php artisan jwt:secret`
-	`php artisan cache:clear`
+        `php artisan key:generate`  
+	`php artisan jwt:secret`  
+	`php artisan cache:clear`  
 	`php artisan config:clear`
 
 10. Run the project! `php artisan serve`
