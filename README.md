@@ -25,15 +25,20 @@ This project built using **laravel 8.0**, so your php version must be >= **8.0**
    - first user credentials is [`email` => `normal@user.com` , `password` => `normal`] and his role is normal user  
    - second user credentials is [`email` => `admin@user.com` , `password` => `admin`] and his role is admin  
 
-8. Run `php artisan passport:install` to install all passport dependencies.
-9. Run the project! `php artisan serve`
-10. Run `/docs#endpoints`  to read all APIs documentaion (its a package called scribe used for api docs)
-11. Run /api/login and pass email and password 
-12. This api will respond by a JWT token, use it through your session and pass it in header section to authenticate this user {Authorization = Bearer $generated_JWT }
-13. To check if logged user is permitted to do specific action or not try /api/admin
-14. For login as an admin use this account (generated through the seeding process) 'admin@user.com' for email and 'admin' for password
-15. DO NOT forget to put the generated token in the Headers section with key 'Authorization' and value `Bearer (generated token)`
-16. Useful commands i think you may need it  
+8. Some useful commands needed to Run:  
+        `php artisan key:generate`
+	`php artisan jwt:secret`
+	`php artisan cache:clear`
+	`php artisan config:clear`
+
+10. Run the project! `php artisan serve`
+11. Run `/docs#endpoints`  to read all APIs documentaion (its a package called scribe used for api docs)
+12. Run /api/login and pass email and password 
+13. This api will respond by a JWT token, use it through your session and pass it in header section to authenticate this user {Authorization = Bearer $generated_JWT }
+14. To check if logged user is permitted to do specific action or not try /api/admin
+15. For login as an admin use this account (generated through the seeding process) 'admin@user.com' for email and 'admin' for password
+16. DO NOT forget to put the generated token in the Headers section with key 'Authorization' and value `Bearer (generated token)`
+17. Useful commands i think you may need it  
 	- `php artisan optimize`  
 	- `php artisan key:generate`  
 
